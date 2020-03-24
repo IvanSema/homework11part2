@@ -146,8 +146,8 @@ form input:focus:invalid + .error-wrapper .error{
     width: 16px;
     height: 16px;
     background-color: #23ae92;
-    padding: 4px 3px;
     box-sizing: border-box;
+    padding: 4px 3px;
 }
 
 .new_checkbox:active{
@@ -161,10 +161,6 @@ form [type="checkbox"]{
     width: 0px;
 }
 
-form [type="checkbox"]:focus{
-    border: 2px solid #e66a64;
-}
-
 form .new_checkbox img{
     display: none;
 }
@@ -175,6 +171,7 @@ form [type="checkbox"]:checked + .new_checkbox img{
 
 form [type="checkbox"]:focus + .new_checkbox{
     border: 2px solid #e66a64;
+    padding: 2px 1px;
 }
 
 .new_checkbox + span{
