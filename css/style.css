@@ -52,6 +52,7 @@ h1, h2 {
     margin: 100px auto;
     padding: 50px 70px;
     box-sizing: border-box;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
 
 .mainer .sign-checked, .mainer .join-checked{
@@ -155,19 +156,25 @@ form input:focus:invalid + .error-wrapper .error{
 
 
 form [type="checkbox"]{
-    display: none;
+    display: block;
+    height: 0px;
+    width: 0px;
 }
 
 form [type="checkbox"]:focus{
     border: 2px solid #e66a64;
 }
 
-form [type="checkbox"] + img{
+form .new_checkbox img{
     display: none;
 }
 
-form [type="checkbox"]:checked + img{
+form [type="checkbox"]:checked + .new_checkbox img{
     display: block;
+}
+
+form [type="checkbox"]:focus + .new_checkbox{
+    border: 2px solid #e66a64;
 }
 
 .new_checkbox + span{
