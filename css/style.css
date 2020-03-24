@@ -217,7 +217,6 @@ form button:focus{
     text-decoration: none;
     border-bottom: 1px solid #b9b9cc;
     padding: 0 0 3px 0;
-    z-index: 1;
 }
 
 .link-wrapper a:hover{
@@ -233,5 +232,4 @@ form button:focus{
 
 a:focus{
     border: 1px solid rgba(8, 207, 191, 0.376);
-    z-index: 0;
 }
